@@ -1,0 +1,14 @@
+{
+  "name": "password_generator",
+  "version": "1.0.0",
+  "description": "the app that generates the password based on option you decide.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+      "password_generator": "./index.js"
+    },
+  "author": "Anhelina Romanchuk",
+  "license": "ISC"
+}
