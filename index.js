@@ -11,11 +11,11 @@ const generatePassword = (length, useNumbers, useUppercase, useSymbols) => {
     const symbols = '!#$%&?';
 
     // Set of used characters in generating password
-    const characterSet = lowercase;
+    let characterSet = lowercase;
 
-    if(useNumbers){ characterSet += numbers };
-    if(useUppercase){ characterSet += uppercase };
-    if(useSymbols){ characterSet += symbols };
+    if (useNumbers) characterSet += numbers ;
+    if (useUppercase) characterSet += uppercase ;
+    if (useSymbols) characterSet += symbols ;
 
     // Generate password
     let password = '';
@@ -78,7 +78,7 @@ Options:
     --uppercase          Include uppercase letters in the password;
     --symbols            Include symbols in the password;
     --help, -h           Display this help message`);
-    
+
         process.exit(0);
     }
 
